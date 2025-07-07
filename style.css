@@ -397,6 +397,7 @@ nav a.active::after {
 .product-img {
     height: 30rem;
     overflow: hidden;
+     position: relative;
 }
 
 .product-img img {
@@ -863,6 +864,44 @@ a.whatsapp-btn:visited,
 a.whatsapp-btn span,
 a.whatsapp-btn i {
   color: #d4af37 !important; /* color dorado */
+}
+
+.product-card.oferta {
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+  position: relative;
+}
+
+
+.badge-oferta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffcc00;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+  z-index: 2; /* Asegura que esté encima de la imagen */
+  opacity: 1; /* Asegura que esté visible siempre */
+  transition: transform 0.3s ease;
+}
+
+
+.precio-antiguo {
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.precio-oferta {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 
