@@ -188,7 +188,7 @@ nav a.active::after {
     animation: cursor 0.6s infinite, typing 20s steps(15) infinite;
 }
 
-/* Alternativa con fade-in (opcional) */
+
 .animated-text {
     font-size: 3.2rem;
     color: var(--gold);
@@ -343,7 +343,7 @@ nav a.active::after {
     font-size: 1.8rem;
 }
 
-/* Catalog Section */
+
 .catalog-section {
     padding: 10rem 9% 8rem;
 }
@@ -434,7 +434,7 @@ nav a.active::after {
     color: var(--light-gray);
 }
 
-/* Contact Section */
+
 .contact-section {
     padding: 10rem 9% 8rem;
     background-color: var(--dark-black);
@@ -540,7 +540,7 @@ nav a.active::after {
     min-height: 15rem;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--dark-black);
     padding: 5rem 9% 3rem;
@@ -732,7 +732,7 @@ footer {
     .contact-form {
         padding: 2rem;
     }
-    /* Añade esto a tu archivo style.css */
+    
 nav a {
     position: relative;
     padding-bottom: 5px; /* Espacio para la barra */
@@ -789,7 +789,7 @@ nav a.active {
     border: 1px solid var(--gold);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
@@ -808,7 +808,7 @@ nav a.active {
   --gold: #d4af37; /* Color dorado */
 }
 
-/* Estilo del botón WhatsApp */
+
 .whatsapp-btn {
   display: inline-flex;
   align-items: center;
@@ -829,7 +829,7 @@ nav a.active {
 }
 
 
-/* Hover */
+
 .whatsapp-btn:hover {
   background-color: rgba(212, 175, 55, 0.1);
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
@@ -837,13 +837,12 @@ nav a.active {
   text-decoration: none;
 }
 
-/* Focus */
 .whatsapp-btn:focus {
   outline: none;
   box-shadow: none;
 }
 
-/* Asegura que el span y el ícono no tengan efectos visuales inesperados */
+
 .whatsapp-btn span,
 .whatsapp-btn i {
   text-decoration: none;
