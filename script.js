@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ======================
-    // MENÚ MOBILE (HAMBURGUESA)
-    // ======================
+  
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
     
@@ -11,9 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('fa-times');
     });
     
-    // ======================
-    // CERRAR MENÚ AL CLICAR ENLACES
-    // ======================
+  
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -22,17 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ======================
-    // HEADER STICKY AL SCROLLEAR
-    // ======================
+  
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 50);
     });
     
-    // ======================
-    // FORMULARIO DE CONTACTO
-    // ======================
+    
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -67,9 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ======================
-    // EFECTO HOVER PARA PRODUCTOS
-    // ======================
+   
     const productCards = document.querySelectorAll('.product-card');
     productCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
@@ -81,9 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ======================
-    // SCROLL SUAVE PARA ENLACES
-    // ======================
+  
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -102,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// WhatsApp config
+
 const whatsappNumber = '573169741025';
 const defaultMessage = 'Hola, vi este modelo en su catálogo y me interesa:';
 
@@ -111,7 +99,7 @@ function redirectToWhatsApp(productName) {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
 }
 
-// Botones WhatsApp
+
 document.querySelectorAll('.whatsapp-btn').forEach(button => {
     button.addEventListener('click', function (e) {
         e.stopPropagation();
@@ -121,7 +109,7 @@ document.querySelectorAll('.whatsapp-btn').forEach(button => {
     });
 });
 
-// Click en tarjeta completa (excepto botón)
+
 document.querySelectorAll('.product-card').forEach(card => {
     card.addEventListener('click', function (e) {
         if (!e.target.closest('.whatsapp-btn')) {
@@ -131,7 +119,7 @@ document.querySelectorAll('.product-card').forEach(card => {
     });
 });
 
-// Opcional: navegación activa (ajusta si usas navLinks)
+
 const navLinks = document.querySelectorAll('.nav-link'); // Cambia el selector si es necesario
 
 function updateActiveLink() {
